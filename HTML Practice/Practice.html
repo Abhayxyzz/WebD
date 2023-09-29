@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<link rel="stylesheet" href="style.css">
+<style>
+    /* Css Reset */
+    body {
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.png') no-repeat center center/cover;
+        height: 100%;
+        width: 100%;
+        color: white;
+
+    }
+    .left{
+        display: inline block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+
+    }
+    .mid{
+        display: block;
+        width: 35%;
+        margin: 20px auto;
+       
+
+    }
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px ;
+        display: inline-block;
+        
+
+    }
+    .navbar{
+        display: inline-block;
+
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover{
+        text-decoration: underline;
+        color: aquamarine;
+    }
+    .left img{
+        width: 70px;
+        color: white;
+        filter: invert(100%);
+    }
+    .left div{
+        text-align: center;
+    }
+    .btn{
+        margin: 0px 5px;
+        padding: 9px 14px;
+        background-color: black;
+        color: white;
+        border: 2px solid grey;
+        border-radius: 15px;
+        cursor: pointer;
+
+    }
+    .btn:hover{
+        background-color: rgb(92, 89, 89);
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        margin: 15px;
+        width: 125px;
+        padding: 8px;
+        border: 2px solid black;
+        
+
+    }
+    .container{
+        
+        margin: 93px -90px;
+        padding: 12%;
+        border-radius: 2px;
+    }
+    .container h1{
+        font-size:x-large;
+        text-align:left;
+    }
+    .container button{
+        display: block;
+        margin: 0px 47px;
+        padding: 9px 14px;
+        cursor: pointer;
+    }
+    .form-group{
+        margin: 10px;
+        padding: 0px;
+    }
+</style>
+<body>
+    <header class="header">
+        <!-- left for logo -->
+        <div class="left">
+            <img src="img/ab.jpg" alt="">
+            <div> Eagle </div>
+        
+
+        </div>
+        <!-- mid for navigation -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">  Home </a></li>
+                <li><a href="#"> About US </a></li>
+                <li><a href="#"> My Web </a></li>
+                <li><a href="#"> Contact Us </a></li>
+            </ul>
+        
+
+        </div>
+        <!-- right for buttons -->
+        <div class="right">
+            <button class="btn"> Instagram </button><button class="btn"> Facebook </button>
+
+        </div>
+    </header>
+    <div class="container">
+        <h1> If You're new Please Sign Up Here!</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your name">
+            </div>
+            <button class="btn">Submit</button>
+         
+        </form>
+        
+    
+    </div>
+</body>
+</html>
